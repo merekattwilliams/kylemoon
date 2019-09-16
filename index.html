@@ -1,12 +1,12 @@
 <!--to do:
-add headshots
-add media player
-add contact info&social media
-add merch page
-add tour dates
-add bio
-remove search in navbar
-remove 'more' in navbar
+
+add contact info&social media (href's)
+add instagram feed
+separate .css and .js
+
+add logo (use gimp to crop)
+add headshots&more photos (later)
+add tour dates (later)
  -->
 
 <!DOCTYPE html>
@@ -37,16 +37,18 @@ a, h2 {font-family: 'Rye', cursive;}
     <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
     <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
     <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
+    <a href="#footer" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MEDIA</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <iframe src="https://open.spotify.com/embed/artist/4nyiDPcJbigTzpaqPqu1og" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
-        <a href="#" class="w3-bar-item w3-button">Extras</a>
-        <a href="#" class="w3-bar-item w3-button">Media</a>
+     <!-- <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     -->
+      <!--<div class="w3-dropdown-content w3-bar-block w3-card-4"> -->
+        <!--<a href="#" class="w3-bar-item w3-button">Merchandise</a> -->
+       <!-- <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a> -->
       </div>
     </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+   <!-- <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a> -->
   </div>
 </div>
 
@@ -55,7 +57,7 @@ a, h2 {font-family: 'Rye', cursive;}
   <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
   <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+  <!--<a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a> -->
 </div>
 
 <!-- Page content -->
@@ -88,9 +90,22 @@ a, h2 {font-family: 'Rye', cursive;}
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
     <h2 class="w3-wide">Kyle Moon and the Misled</h2>
     <p class="w3-opacity"><i>Independent Texas Country Music</i></p>
-    <p class="w3-justify">We are putting the biography of Kyle Moon here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p class="w3-justify">Kyle Moon &amp; the Misled is an Americana/Cosmic Country outfit based in San Antonio, Texas.
+Kyle Moon honed his songwriting skills in the Little Ravens, an Indie/Americana
+band in Denver, Colorado. As a group, they garnered a huge following, and sold out
+venues such as the Marquis Theater in downtown Denver. At the height of their
+popularity, Kyle moved to San Antonio, Texas where the band “Kyle Moon &amp; the Misled”
+began to take shape in mid 2018. By the beginning of 2019 they released their first EP
+“Goodbye Denver” with stand-out tracks, “One Shot”, “Goodbye Denver” and “Texas
+Summer” which received regional radio airplay.
+In August 2019 the band released their first full length record, “Straight Fine
+Livin’”. The lead-off single &quot;Paint this Town Red&quot; is a Cosmic, Bluesy ode to the good
+life, while the second single, &quot;Dance Halls&quot; draws its inspiration from what makes Texas Music so unique. Other standout tracks include; the old-fashioned barnburner that is the
+title track &quot;Straight Fine Livin&#39;&quot;, &quot;Stay Young&quot; a ballad about growing up and growing old, and the moody groove of &quot;Worst Enemy.&quot;
+Though they only have been playing around San Antonio for a little more than a
+year the group’s live show has built them a solid reputation amongst concert goers and
+brought big crowds to many local venues such as Fitzgerald’s and the legendary Sam’s
+Burger Joint.</p>
     <div class="w3-row w3-padding-32">
       <div class="w3-third">
         <p>Name</p>
@@ -205,13 +220,13 @@ a, h2 {font-family: 'Rye', cursive;}
 <!--<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%"> -->
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+<footer id="footer">
   <i class="fa fa-facebook-official w3-hover-opacity"></i>
   <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <!--<i class="fa fa-snapchat w3-hover-opacity"></i> -->
+ <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
   <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <!--<i class="fa fa-linkedin w3-hover-opacity"></i> -->
   <!--<p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
 </footer>
 

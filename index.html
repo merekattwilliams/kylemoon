@@ -1,12 +1,13 @@
 <!--to do:
-fix spotify button on media query
-add contact info&social media (href's)
-add instagram feed
-separate .css and .js
+
+
+
 
 
 add headshots&more photos (later)
 add tour dates (later)
+add instagram feed (someday. kung fu currently too weak)
+separate .css and .js (someday. ")
  -->
 
 <!DOCTYPE html>
@@ -23,6 +24,8 @@ body {font-family: "Lato", sans-serif}
 a, h2 {font-family: 'Rye', cursive;}
 .mySlides {display: none; animation-name: fader;  animation-delay: 4s;
     animation-duration: 1s;}
+
+
   @keyframes fader {
     from { opacity: 1.0; }
     to   { opacity: 0.0; }
@@ -84,6 +87,20 @@ a, h2 {font-family: 'Rye', cursive;}
       <p><b><!--image description -->.</b></p>    
     </div>
   </div>
+  <div class="mySlides">
+    <img src="images/moon-livebwjpg.jpg" alt="Band playing live" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3><!--image title--></h3>
+      <p><b><!--image description -->.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides">
+    <img src="images/moon-venue.jpg" alt="Outside venue" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3><!--image title--></h3>
+      <p><b><!--image description -->.</b></p>    
+    </div>
+  </div>
 
   <!-- The Band Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
@@ -106,7 +123,10 @@ Though they only have been playing around San Antonio for a little more than a
 year the group’s live show has built them a solid reputation amongst concert goers and
 brought big crowds to many local venues such as Fitzgerald’s and the legendary Sam’s
 Burger Joint.</p>
-    <div class="w3-row w3-padding-32">
+
+
+
+   <!-- <div class="w3-row w3-padding-32">
       <div class="w3-third">
         <p>Name</p>
         <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
@@ -119,8 +139,10 @@ Burger Joint.</p>
         <p>Name</p>
         <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
       </div>
-    </div>
-  </div>
+    </div> -->
+  </div> 
+
+<script src="https://www.powr.io/powr.js?platform=embed"></script><div class="powr-instagram-feed" id="b96def4e_1568847518"></div>
 
   <!-- The Tour Section -->
   <div class="w3-black" id="tour">
@@ -193,10 +215,10 @@ Burger Joint.</p>
     <div class="w3-row w3-padding-32">
       <div class="w3-col m6 w3-large w3-margin-bottom">
         <i class="fa fa-map-marker" style="width:30px"></i> San Antonio, TX<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: 210-414-4990<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: kylemoonandthemisled@gmail.com<br>
       </div>
-      <div class="w3-col m6">
+     <!-- <div class="w3-col m6">
         <form action="/action_page.php" target="_blank">
           <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
             <div class="w3-half">
@@ -211,7 +233,7 @@ Burger Joint.</p>
         </form>
       </div>
     </div>
-  </div>
+  </div> -->
   
 <!-- End Page Content -->
 </div>
@@ -221,11 +243,11 @@ Burger Joint.</p>
 
 <!-- Footer -->
 <footer id="footer">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <a href="https://www.facebook.com/kylemoonandthemisled/"><i class="fa fa-facebook-official w3-hover-opacity" ></i></a>
+  <a href="https://www.instagram.com/kyle_moon_and_the_misled/p/BqytZNjlqbz/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
   <!--<i class="fa fa-snapchat w3-hover-opacity"></i> -->
  <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
-  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <a href="https://twitter.com/kylemisled?lang=en"><i class="fa fa-twitter w3-hover-opacity"></i></a>
   <!--<i class="fa fa-linkedin w3-hover-opacity"></i> -->
   <!--<p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
 </footer>
@@ -264,7 +286,7 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-</script>
+</script> 
 
 </body>
 </html>
